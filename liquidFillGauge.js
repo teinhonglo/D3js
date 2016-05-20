@@ -202,9 +202,13 @@ function loadLiquidFillGauge(elementId, value, config) {
     function GaugeUpdater(){
         this.update = function(value){
             var newFinalValue = parseFloat(value).toFixed(2);
-            var textRounderUpdater = function(value){ return Math.round(value); };
+            var textRounderUpdater = function(value){ 
+				return Math.round(value); 
+			};
             if(parseFloat(newFinalValue) != parseFloat(textRounderUpdater(newFinalValue))){
-                textRounderUpdater = function(value){ return parseFloat(value).toFixed(1); };
+                textRounderUpdater = function(value){ 
+					return parseFloat(value).toFixed(1); 
+				};
             }
             if(parseFloat(newFinalValue) != parseFloat(textRounderUpdater(newFinalValue))){
                 textRounderUpdater = function(value){ return parseFloat(value).toFixed(2); };

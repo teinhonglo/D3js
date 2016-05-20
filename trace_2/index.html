@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+    <style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+    </style>
+</head>
+<body>
+<img width="100" height="100"  src="img/bt_1.jpg" id="SS0"></div>
+<svg id="fillgauge5" width="19%" height="200"></svg>
+<img width="50" height="50"  src="img/bt_1.jpg" onclick="gauge5.update(NewValue('up_10'));"></div>
+<img width="50" height="50"  src="img/bt_2.jpg" onclick="gauge5.update(NewValue('up_5'));"></div>
+
+<script language="JavaScript">
+    var config4 = liquidFillGaugeDefaultSettings();
+    config4.circleThickness = 0.15;
+    config4.circleColor = "#808015";
+    config4.textColor = "#555500";
+    config4.waveTextColor = "#FFFFAA";
+    config4.waveColor = "#AAAA39";
+    config4.textVertPosition = 0.8;
+    config4.waveAnimateTime = 1000;
+    config4.waveHeight = 0.05;
+    config4.waveAnimate = true;
+    config4.waveRise = false;
+    config4.waveHeightScaling = false;
+    config4.waveOffset = 0.25;
+    config4.textSize = 0.75;
+    config4.waveCount = 3;
+	var waterHeight = 6.44;
+    var gauge5 = loadLiquidFillGauge("fillgauge5", waterHeight, config4);
+	
+    function NewValue(option){
+		if(option == 'up_10')
+			waterHeight += 10;
+		else if(option = 'up_5')
+			waterHeight += 5;
+		isDead(waterHeight);
+		return waterHeight;
+    }
+	function isDead(value){
+		if(waterHeight > 50)
+			document.getElementById("SS0").src = 'img/bt_2.jpg';
+	}
+	
+	
+	
+	
+</script>
+</body>
+</html>
+</html>
