@@ -39,6 +39,9 @@
 			waterHeight += 10;
 		else if(option = 'up_5')
 			waterHeight += 5;
+		
+		if(waterHeight > 100)
+			waterHeight = 100
 		isDead(waterHeight);
 		return waterHeight;
     }
