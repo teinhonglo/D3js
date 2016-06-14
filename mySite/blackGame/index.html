@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Black Kite Game</title>
+    <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+    <script src="liquidFillGauge.js" type="text/javascript"></script>
+    <style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+    </style>
+	<link href="css/Style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div id="flow-tb">
+	<div style="max-height:90%;max-width:100%;">
+		<div id = "img_bk">
+			<img id="SS0" src="img/black_kite_1.png" alt="Black_Kite" />
+			
+			<svg id="img_liquid"></svg>
+		</div>
+	</div>
+	<br />
+	<div style="max-height:10%;max-width:100%;">
+		<div class="bt_td_odd">
+			<img class="bt_class" id="bt_pesticide" src="img/all1-01.png" alt="pesticide" onclick="gauge5.update(NewValue('5'));" />
+		</div>
+		<div class="bt_td_even">
+			<img class="bt_class" id="bt_sparrow" src="img/all1-02.png" alt="sparrow" onclick="gauge5.update(NewValue('10'));" />
+		</div>
+		<div class="bt_td_odd">
+			<img class="bt_class" id="bt_ratPoison" src="img/all1-03.png" alt="ratPoison" onclick="gauge5.update(NewValue('15'));" />
+		</div>
+		<div class="bt_td_even">
+			<img class="bt_class" id="bt_mouse" src="img/all1-04.png" alt="mouse" onclick="gauge5.update(NewValue('15'));" />
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    var config4 = liquidFillGaugeDefaultSettings();
+    config4.circleThickness = 0.15;
+    config4.circleColor = "#808015";
+    config4.textColor = "#555500";
+    config4.waveTextColor = "#FFFFAA";
+    config4.waveColor = "#AAAA39";
+    config4.textVertPosition = 0.8;
+    config4.waveAnimateTime = 1000;
+    config4.waveHeight = 0.05;
+    config4.waveAnimate = true;
+    config4.waveRise = false;
+    config4.waveHeightScaling = false;
+    config4.waveOffset = 0;
+    config4.textSize = 0.75;
+    config4.waveCount = 3;
+	var waterHeight = 0.00;
+    var gauge5 = loadLiquidFillGauge("img_liquid", waterHeight, config4);
+	
+    function NewValue(option){
+		value_f = parseInt(option);
+		waterHeight += value_f;
+		
+		if(waterHeight > 100)
+			waterHeight = 100;
+			
+		isDead(waterHeight);
+		return waterHeight;
+    }
+	function isDead(value){
+		value_f = parseFloat(value);
+		if (value_f < 20){
+			document.getElementById("SS0").src = 'img/black_kite_1.png';
+		}else if (value_f >= 20 && value_f < 35){
+			document.getElementById("SS0").src = 'img/black_kite_2.png';
+		} else if (value_f >= 35 && value_f < 50){
+			document.getElementById("SS0").src = 'img/black_kite_3.png';
+		} else if (value_f >= 50 && value_f < 75){
+			document.getElementById("SS0").src = 'img/black_kite_4.png';
+		}else if (value_f >= 75 && value_f < 90){
+			document.getElementById("SS0").src = 'img/black_kite_5.png';
+		}else if (value_f >= 90 && value_f <= 100){
+			document.getElementById("SS0").src = 'img/black_kite_6.png';
+		}
+	}
+	
+</script>
+</body>
+</html>
