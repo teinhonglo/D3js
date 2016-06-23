@@ -1,0 +1,64 @@
+#flow-tb{
+	border-collapse:collapse;
+	background-color: #99D9F6;
+	background-size: cover;
+	width:100%;
+	height:100%;
+	text-align : center;
+}
+
+.bt_class{
+	width:50%;
+	height:auto;
+}
+
+.bt_class:hover{
+	cursor:pointer;
+	margin:0px 5px;
+}
+
+.bt_td_odd{
+	background-color:#008800;
+	float:left;
+	width:100%;
+	position:relative;
+	opacity:0.8;
+}
+
+.bt_td_even{
+	background-color:#00DD00;
+	float:left;
+	position:relative;
+	width:100%;
+	opacity:0.8;
+}
+
+.bt_td_odd:hover{
+	opacity:0.6;
+}
+
+.bt_td_even:hover{
+	opacity:0.6;
+}
+
+#img_bk{
+	float:left;
+	width:100%;
+	background-color: #0066CC;
+	background-size: cover;
+}
+
+#SS0{
+	padding-top:30px;
+	padding-bottom:30px;
+	width:60%;
+	float:left;
+	position: relative;
+}
+
+#img_liquid{
+	width:30%;
+	float:left;
+	position: relative;
+	padding-top:80px;
+}

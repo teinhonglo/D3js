@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]-->
+<html lang="en">
+<!--[endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Term Project of Information Visulization">
+    <meta name="author" content="Tien-Hong, Lo">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>黑鳶剖揭特</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/img/vs-icon.png" rel="SHORTCUT ICON">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+    <!--END HEAD SECTION -->
+<body style="background-color:#99D9F6">   
+     <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">黑鳶剖揭特</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header-section">首頁</a></li>
+                    <li><a href="#QA-section">黑鳶知多少</a></li>
+					<li><a href="#PopularScience">黑鳶科普</a></li>
+                    <li><a href="#blackGamer">黑鳶覓食大作戰</a></li>
+					<li><a href="#Animate">惡性循環圖</a></li>
+					<li><a href="#Repopulation">黑鳶復育</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+     <!--END NAV SECTION -->
+     <!-- HEADER SECTION -->
+    <div id="header-section">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1><strong>黑鳶剖揭特</strong>          
+                     
+                    </h1>
+                     <br /> <br /> <br />
+                    <h2> BLACK KITE PROJECT</h2>
+                     <br />
+                  <a href="#QA-section" >  <i class="fa fa-angle-double-down fa-5x down-icon"></i> </a>
+                </div>
+            </div>
+           
+        </div>
+       
+    </div> 
+      <!--END HEADER SECTION -->
+    <!--ABOUT SECTION -->
+    <div id="QA-section" >
+        <div class="container text-center">
+            
+            <!-- ./ Main Heading-->
+            <div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/problem_5/flow/flow2.png" alt="just_flow"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#p1" style="z-index:1;" onclick="next_step('p1');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+              <!-- ./ Row Content-->
+        </div>
+    </div>
+	<div id="p1" style="display:none;padding-top:50px">
+		<div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td colspan="3">
+								<img src="assets/img/problem_5/flow/QnA_flow.png" alt="just_flow"/>
+							</td>
+						</tr>
+						<tr class="p_button" >
+							<td>
+								<a href="#p1_ans"  onclick="display_ans('p1_ans', 'p1');"><img id="p1_b1" src="assets/img/problem_5/AnswerBT/A1/Q1S1.png" alt="p1_b1"/></a>
+							</td>
+							<td>
+								<a href="#p1_ans" onclick="display_ans('p1_ans', 'p1');"><img id="p1_b2" src="assets/img/problem_5/AnswerBT/A1/Q1S2.png" alt="p1_b2"/></a>
+							</td>
+							<td>
+								<a href="#p1_ans" onclick="display_ans('p1_ans', 'p1');"><img id="p1_b3" src="assets/img/problem_5/AnswerBT/A1/Q1S3.png" alt="p1_b3"/></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+        </div>
+    </div>
+	<div id="p1_ans" style="display:none;padding-top:50px">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/problem_5/flow/flow2.png" alt="just_flow" style="max-width:100%;"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#p2" onclick="next_step('p2');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="p2" style="display:none;padding-top:50px">
+		<div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td colspan="3">
+								<img src="assets/img/problem_5/flow/QnA_flow.png" alt="jsut_flow"/>
+							</td>
+						</tr>
+						<tr class="p_button" >
+							<td>
+								<a href="#p2_ans"  onclick="display_ans('p2_ans', 'p2');"><img id="p2_b1" src="assets/img/problem_5/AnswerBT/A2/Q2S1.png" alt="p2_b1"/></a>
+							</td>
+							<td>
+								<a href="#p2_ans" onclick="display_ans('p2_ans', 'p2');"><img id="p2_b2" src="assets/img/problem_5/AnswerBT/A2/Q2S2.png" alt="p2_b2"/></a>
+							</td>
+							<td>
+								<a href="#p2_ans" onclick="display_ans('p2_ans', 'p2');"><img id="p2_b3" src="assets/img/problem_5/AnswerBT/A2/Q2S3.png" alt="p2_b3"/></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+        </div>
+    </div>
+	<div id="p2_ans" style="display:none;padding-top:50px">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/problem_5/flow/flow2.png" alt="just_flow" style="max-width:100%;"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#p3" onclick="next_step('p3');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="p3" style="display:none;padding-top:50px">
+		<div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td colspan="3">
+								<img src="assets/img/problem_5/flow/QnA_flow.png" alt="just_flow"/>
+							</td>
+						</tr>
+						<tr class="p_button" >
+							<td>
+								<a href="#p3_ans"  onclick="display_ans('p3_ans', 'p3');"><img id="p3_b1" src="assets/img/problem_5/AnswerBT/A3/Q3S1.png" alt="p3_b1"/></a>
+							</td>
+							<td>
+								<a href="#p3_ans" onclick="display_ans('p3_ans', 'p3');"><img id="p3_b2" src="assets/img/problem_5/AnswerBT/A3/Q3S2.png" alt="p3_b2"/></a>
+							</td>
+							<td>
+								<a href="#p3_ans" onclick="display_ans('p3_ans', 'p3');"><img id="p3_b3" src="assets/img/problem_5/AnswerBT/A3/Q3S3.png" alt="p3_b3"/></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+        </div>
+    </div>
+	<div id="p3_ans" style="display:none;padding-top:50px">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/problem_5/flow/flow2.png" alt="just_flow" style="max-width:100%;"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#p4" onclick="next_step('p4');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="p4" style="display:none;padding-top:50px">
+		<div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td colspan="3">
+								<img src="assets/img/problem_5/flow/QnA_flow.png" alt="just_flow"/>
+							</td>
+						</tr>
+						<tr class="p_button" >
+							<td>
+								<a href="#p4_ans"  onclick="display_ans('p4_ans', 'p4');"><img id="p4_b1" src="assets/img/problem_5/AnswerBT/A4/Q4S1.png" alt="p4_b1" /></a>
+							</td>
+							<td>
+								<a href="#p4_ans" onclick="display_ans('p4_ans', 'p4');"><img id="p4_b2" src="assets/img/problem_5/AnswerBT/A4/Q4S2.png" alt="p4_b2" /></a>
+							</td>
+							<td>
+								<a href="#p4_ans" onclick="display_ans('p4_ans', 'p4');"><img id="p4_b3" src="assets/img/problem_5/AnswerBT/A4/Q4S3.png" alt="p4_b3" /></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+        </div>
+    </div>
+	<div id="p4_ans" style="display:none;padding-top:50px">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/problem_5/flow/flow2.png" alt="just_flow" style="max-width:100%;"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#p5" onclick="next_step('p5');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="p5" style="display:none;padding-top:50px">
+		<div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td colspan="3">
+								<img src="assets/img/problem_5/flow/QnA_flow.png" alt="just_flow"/>
+							</td>
+						</tr>
+						<tr class="p_button" >
+							<td>
+								<a href="#p5_ans"  onclick="display_ans('p5_ans', 'p5');"><img id="p5_b1" src="assets/img/problem_5/AnswerBT/A5/Q5S1.png" alt="p5_b1"/></a>
+							</td>
+							<td>
+								<a href="#p5_ans" onclick="display_ans('p5_ans', 'p5');"><img id="p5_b2" src="assets/img/problem_5/AnswerBT/A5/Q5S2.png" alt="p5_b2"/></a>
+							</td>
+							<td>
+								<a href="#p5_ans" onclick="display_ans('p5_ans', 'p5');"><img id="p5_b3" src="assets/img/problem_5/AnswerBT/A5/Q5S3.png" alt="p5_b3"/></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+        </div>
+    </div>
+	<div id="p5_ans" style="display:none;padding-top:50px">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/problem_5/flow/flow2.png" alt="just_flow2" style="max-width:100%;"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#p_end" onclick="next_step('p_end');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="p_end" style="display:none;padding-top:50px;">
+        <div class="container text-center">
+            <!-- ./ Main Heading-->
+            <div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/problem_5/flow/flow2.png" alt="just_flow2" style="max-width:100%;"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#PopularScience" onclick="next_step('PopularScience');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+              <!-- ./ Row Content-->
+        </div>
+    </div>
+    <!--WORK/PRODUCTS SECTION -->
+    <div id="PopularScience" Style="padding-top:50px;padding-bottom:50px;">
+        <div class="container text-center">
+            <!-- ./ Main Heading-->
+            <div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/repopulation/flow/flow_CS.png" alt="just_flow_CS" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#ps1" style="z-index:1;" onclick="next_step('ps1');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+              <!-- ./ Row Content-->
+        </div>
+    </div>
+	<div id="ps1" style="display:none;padding-top:50px;padding-bottom:50px;">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/repopulation/flow/flow_CS.png" alt="just_flow_CS"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#ps2" onclick="next_step('ps2');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ps2" style="display:none;padding-top:50px;padding-bottom:50px;">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/repopulation/flow/flow_CS.png" alt="just_flow_CS"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#ps3" onclick="next_step('ps3');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ps3" style="display:none;padding-top:50px;padding-bottom:50px;">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/repopulation/flow/flow_CS.png" alt="just_flow_CS"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#distribution" onclick="next_step('distribution');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="distribution" style="display:none">
+         <div class="container text-center" >
+	        <!-- ./ Main Heading-->
+            <div class="row main-low-margin" >
+                <div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s">
+					<h1 class="distribution">世界分佈</h1>
+					<table>
+						<tr>
+							<td>
+								<iframe src="map/WorldMap.htm" width="100%" height="500px" frameborder="0" scrolling="no"></iframe>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#distribution_tw" onclick="next_step('distribution_tw');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i></a>
+							</td>
+						</tr>
+					</table>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="distribution_tw" style="display:none;padding-bottom:50px;">
+         <div class="container text-center" >
+             <!-- ./ Main Heading-->
+            <div class="row main-low-margin" >
+                <div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s">
+					<h1 class="distribution">台灣分佈</h1>
+					<table>
+						<tr>
+							<td>
+								<iframe src="map/DivergingTaiwanCounty.htm" width="100%" height="500px" frameborder="0" scrolling="no"></iframe>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#ps4" onclick="next_step('ps4');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i></a>
+							</td>
+						</tr>
+					</table>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="ps4" style="display:none;">
+        <div class="container text-center" >
+            <div class="row main-low-margin" >
+                <div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+					<table>
+						<tr>
+							<td>
+								<img src="assets/img/repopulation/flow/flow_CS.png" alt="just_flow_CS"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#blackGamer" onclick="next_step('blackGamer');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="blackGamer" style="padding-top:50px;">
+         <div class="container text-center" >
+            <div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.3s" style="max-width:100%;">
+                <div class="col-md-12 col-md-offset-0 ">
+                    <h1>黑鳶覓食大作戰</h1>
+                    <h4>
+                       你是一隻黑鳶，夜幕低垂，經過一天的飛行，也該吃飯了，<br/>
+					   這時候，你發現田裡有些東西可以吃，你打算吃什麼?
+                    </h4>
+                </div>
+            </div>
+             <!-- ./ Main Heading-->
+            <div class="row main-low-margin" >
+                <div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+					<iframe src="blackGame/index.html" style="width:100%;height:600px;" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="Animate" style="padding-bottom:50px;">
+        <div class="container text-center" >
+            <div class="row main-low-margin" >
+                <div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s">
+					<h1>惡性循環圖</h1>
+					<h4>
+                       農藥「好年冬」的施放，對環境造成直接的傷害，對黑鳶、消費者造成間接地健康危害。<br />
+					   另外，黑鳶的消失意味少了一位大地的清道夫，環境將以非自然的方式除害，間接地造成消費者的健康危害。
+                    </h4>
+					<table>
+						<tr>
+							<td>
+								<iframe src="video/index.html" style="width:700px; height:600px;"  frameborder="0" scrolling="no"></iframe> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#Repopulation" style="z-index:1;" onclick="next_step('Repopulation');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="Repopulation" style="padding-bottom:250px;">
+        <div class="container text-center">
+            <!-- ./ Main Heading-->
+            <div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/repopulation/flow/flow_CS.png" alt="just_flow_CS"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#rp1" style="z-index:1;" onclick="next_step('rp1');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+              <!-- ./ Row Content-->
+        </div>
+    </div>
+	<div id="rp1" style="display:none;padding-top:50px;padding-bottom:250px;">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/repopulation/flow/flow_CS.png" alt="just_flow_CS"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#rp2" onclick="next_step('rp2');"><i class="fa fa-angle-double-down fa-5x my-down-icon"></i> </a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="rp2" style="display:none;padding-top:50px;padding-bottom:250px;">
+        <div class="container text-center">
+			<div class="problem_section">
+				<div class="col-md-12 col-md-offset-0" data-scrollreveal="enter right and move 30px, wait 0.4s" style="max-width:100%;">
+                	<table>
+						<tr>
+							<td>
+								<img src="assets/img/repopulation/flow/flow_CS.png" alt="just_flow_CS"/>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        <div class="container">
+            <div class="row ">
+                &copy; 2016 http://teinhonglo.github.io/test-repo/mySite/ | All Right Reserved 				
+            </div>
+        </div>
+    </div>  
+    <!--END FOOTER SECTION --> 
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY LIBRARY -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="assets/js/bootstrap.min.js"></script>
+     <!-- SCROLL REVEL LIBRARY FOR SCROLLING ANIMATIONS-->
+    <script src="assets/js/scrollReveal.js"></script>
+       <!-- CUSTOM SCRIPT-->
+    <script src="assets/js/custom.js"></script>
+	<script type="text/javascript">
+		p_correct = 0;
+		function display_ans(problem_id, prob_id){
+			document.getElementById(problem_id).style.display = "block";
+			if(prob_id == 'p1'){
+				document.getElementById("p1_b3").src = "assets/img/problem_5/AnswerBT/A1/Q1A3.png";
+			} else if(prob_id == 'p2'){
+				document.getElementById("p2_b3").src = "assets/img/problem_5/AnswerBT/A2/Q2A3.png";
+			} else if(prob_id == 'p3'){
+				document.getElementById("p3_b3").src = "assets/img/problem_5/AnswerBT/A3/Q3A3.png";
+			} else if(prob_id == 'p4'){
+				document.getElementById("p4_b2").src = "assets/img/problem_5/AnswerBT/A4/Q4A2.png";
+			} else if(prob_id == 'p5'){
+				document.getElementById("p5_b3").src = "assets/img/problem_5/AnswerBT/A5/Q5A3.png";
+			}
+		}
+		function next_step(next_id){
+			document.getElementById(next_id).style.display = "block";
+		}
+	</script>
+</body>
+</html>
